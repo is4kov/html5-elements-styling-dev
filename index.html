@@ -1,0 +1,694 @@
+<!doctype html>
+<html>
+<head>
+	<title>Demo</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+<div class="l-container">
+	<!-- togglers -->
+	<!-- list -->
+	<input type="radio" name="list-toggles" id="section-input-list" class="toggler" checked>
+	<input type="radio" name="list-toggles" id="section-html5-list" class="toggler">
+	<!-- elements -->
+	<input type="radio" name="section-toggler" id="section-input-text" class="toggler">
+	<input type="radio" name="section-toggler" id="section-input-text-styled" class="toggler">
+	<input type="radio" name="section-toggler" id="section-input-password" class="toggler">
+	<input type="radio" name="section-toggler" id="section-input-password-styled" class="toggler">
+	<input type="radio" name="section-toggler" id="section-input-button" class="toggler">
+	<input type="radio" name="section-toggler" id="section-input-search" class="toggler">
+	<input type="radio" name="section-toggler" id="section-input-search-styled" class="toggler">
+	<input type="radio" name="section-toggler" id="section-input-number" class="toggler">
+	<input type="radio" name="section-toggler" id="section-input-number-styled" class="toggler">
+	<input type="radio" name="section-toggler" id="section-input-time" class="toggler">
+	<input type="radio" name="section-toggler" id="section-input-date" class="toggler">
+	<input type="radio" name="section-toggler" id="section-input-date-styled" class="toggler">
+	<input type="radio" name="section-toggler" id="section-input-range" class="toggler">
+	<input type="radio" name="section-toggler" id="section-input-range-styled" class="toggler">
+	<input type="radio" name="section-toggler" id="section-input-range-datalist" class="toggler">
+	<input type="radio" name="section-toggler" id="section-input-color" class="toggler">
+	<input type="radio" name="section-toggler" id="section-input-color-styled" class="toggler">
+	<input type="radio" name="section-toggler" id="section-textarea" class="toggler">
+	<input type="radio" name="section-toggler" id="section-summary" class="toggler">
+	<input type="radio" name="section-toggler" id="section-summary-styled" class="toggler">
+	<input type="radio" name="section-toggler" id="section-dialog" class="toggler">
+	<input type="radio" name="section-toggler" id="section-audio" class="toggler">
+	<input type="radio" name="section-toggler" id="section-audio-styled" class="toggler">
+	<input type="radio" name="section-toggler" id="section-video" class="toggler">
+	<input type="radio" name="section-toggler" id="section-video-styled" class="toggler">
+	<input type="radio" name="section-toggler" id="section-meter" class="toggler">
+	<input type="radio" name="section-toggler" id="section-meter-styled" class="toggler">
+	<input type="radio" name="section-toggler" id="section-meter-styled-webkit" class="toggler">
+	<input type="radio" name="section-toggler" id="section-progress" class="toggler">
+	<input type="radio" name="section-toggler" id="section-progress-indeterminate" class="toggler">
+	<input type="radio" name="section-toggler" id="section-progress-styled" class="toggler">
+	<input type="radio" name="section-toggler" id="section-progress-styled-webkit" class="toggler">
+	<input type="radio" name="section-toggler" id="section-progress-styled-firefox" class="toggler">
+	<input type="radio" name="section-toggler" id="section-progress-styled-edge" class="toggler">
+
+	<input type="radio" name="section-toggler" id="section-page-start" class="toggler" checked>
+	<input type="radio" name="section-toggler" id="section-page-intro" class="toggler">
+	<input type="radio" name="section-toggler" id="section-page-dummy" class="toggler">
+	<input type="radio" name="section-toggler" id="section-page-outro" class="toggler">
+	<input type="radio" name="section-toggler" id="section-page-final" class="toggler">
+	<!-- end of -->
+	<section class="l-content">
+		<section id="page-start" class="l-section-page">
+			<div>
+				<h1>Yevhen Isakov</h1>
+				<h2>HTML5 Elements<br/> and their styling</h2>
+			</div>
+			<label for="section-page-intro" class="page-navigation-label"></label>
+		</section>
+		<section id="page-intro" class="l-section-page">
+			<progress></progress>
+			<label for="section-page-dummy" class="page-navigation-label"></label>
+		</section>
+		<section id="input-list">
+			<details class="menu" open>
+				<summary>Inputs</summary>
+				<ul>
+					<li>
+						<label for="section-input-text">text</label>
+						<label for="section-input-text-styled">+ styled</label>
+					</li>
+					<li>
+						<label for="section-input-password">password</label>
+						<label for="section-input-password-styled">+ styled</label>
+					</li>
+					<li><label for="section-input-button">button</label></li>
+					<!--<li><label for="section-input-search">search</label></li>-->
+					<li>
+						<label for="section-input-number">number</label>
+						<label for="section-input-number-styled">+ styled</label>
+					</li>
+					<!--<li><label for="section-input-time">time</label></li>-->
+					<li>
+						<label for="section-input-date">date</label>
+						<label for="section-input-date-styled">+ styled</label>
+					</li>
+					<li>
+						<label for="section-input-range">range</label>
+						<label for="section-input-range-styled">+ styled</label>
+					</li>
+					<li>
+						<label for="section-input-color">color</label>
+						<label for="section-input-color-styled">+ styled</label>
+					</li>
+				</ul>
+				<div class="global-label__container">
+					<div>
+						<label for="section-html5-list">HTML5 Tags</label>
+					</div>
+					<div>
+						<label for="section-page-outro">:q</label>
+					</div>
+				</div>
+			</details>
+			<section id="input-text" class="l-section-example">
+				<header>input[type="text"]</header>
+				<pre>&lt;input type="text" placeholder="Enter some text" /></pre>
+				<div class="result">
+					<input type="text" value="" placeholder="Enter some text" class="example example-input-text"/>
+				</div>
+				<div class="pseudoentity__container">
+					<div class="pseudoentity">::placeholder</div>
+					<div class="pseudoentity">:placeholder-shown</div>
+				</div>
+			</section>
+			<section id="input-text-styled" class="l-section-example">
+				<header>input[type="text"]</header>
+				<div class="result">
+					<input type="text" value="" placeholder="Enter some text" class="example example-input-text-styled"/>
+				</div>
+				<pre>::-ms-value {
+	border: 1px solid #fe57a1;
+	}
+
+::-ms-clear {
+	color: #fe57a1;
+	}</pre>
+			</section>
+			<section id="input-password" class="l-section-example">
+				<header>input[type="password"]</header>
+				<div class="content">
+					<div class="result">
+						<input type="password" class="example example-input-password"/>
+					</div>
+					<pre>&lt;input type="password" /></pre>
+					<div><label for="section-input-text-styled">+ styled</label></div>
+				</div>
+			</section>
+			<section id="input-password-styled" class="l-section-example">
+				<header>input[type="password"]</header>
+				<div class="content">
+					<div class="result">
+						<input type="password" class="example example-input-password-styled"/>
+					</div>
+					<pre>&lt;input type="password" /></pre>
+					<pre>::-ms-reveal {
+	color: white;
+	}</pre>
+				</div>
+			</section>
+			<section id="input-button" class="l-section-example">
+				<header>input[type="button"]</header>
+				<div class="result">
+					<input type="button" value="Click" class="example example-input-button"/>
+				</div>
+				<pre>::-moz-focus-inner {
+	margin: 0;
+	padding: 0;
+	}</pre>
+			</section>
+			<section id="input-search" class="l-section-example">
+				<header>input[type="search"]</header>
+				<div class="content">
+					<div class="result">
+						<input type="search" class="example example-input-search"/>
+					</div>
+				</div>
+			</section>
+			<section id="input-number" class="l-section-example">
+				<header>input[type="number"]</header>
+				<div class="content">
+					<div class="result">
+						<input type="number" min="0" max="100" class="example example-input-number"/>
+					</div>
+					<pre>&lt;input type="number"></pre>
+				</div>
+			</section>
+			<section id="input-number-styled" class="l-section-example">
+				<header>input[type="number"]</header>
+				<div class="content">
+					<div class="result">
+						<input type="number" min="0" max="100" class="example example-input-number-styled"/>
+					</div>
+					<pre>
+::-webkit-textfield-decoration-container
+::-webkit-inner-spin-button
+::-webkit-outer-spin-button
+
+::-moz-number-wrapper
+::-moz-number-text
+::-moz-number-spin-box
+::-moz-number-spin-up
+::-moz-number-spin-down</pre>
+				</div>
+			</section>
+			<section id="input-time" class="l-section-example">
+				<header>input[type="time"]</header>
+				<div class="content">
+					<div class="result">
+						<input type="time" class="example example-input-time"/>
+					</div>
+				</div>
+			</section>
+			<section id="input-date" class="l-section-example">
+				<header>input[type="date"]</header>
+				<div class="content">
+					<div class="result">
+						<input type="date" value="2018-04-21" class="example example-input-date"/>
+					</div>
+				</div>
+			</section>
+			<section id="input-date-styled" class="l-section-example">
+				<header>input[type="date"]</header>
+				<div class="content">
+					<div class="result">
+						<input type="date" value="2018-04-21" class="example example-input-date-styled"/>
+					</div>
+					<pre>::-webkit-datetime-edit
+::-webkit-datetime-edit-fields-wrapper
+::-webkit-datetime-edit-text
+::-webkit-datetime-edit-month-field
+::-webkit-datetime-edit-day-field
+::-webkit-datetime-edit-year-field
+::-webkit-inner-spin-button
+::-webkit-calendar-picker-indicator
+::-webkit-clear-button</pre>
+				</div>
+			</section>
+			<section id="input-range" class="l-section-example">
+				<header>input[type="range"]</header>
+				<div class="content">
+					<div class="result">
+						<input type="range" min="0" max="100" value="40" step="5" class="example example-input-range"/>
+					</div>
+					<pre>&lt;input type="range" min="0" max="100" value="40" step="5" /></pre>
+					<label for="section-input-range-datalist" class="example-content-label">+ datalist</label>
+				</div>
+			</section>
+			<section id="input-range-datalist" class="l-section-example">
+				<header>input[type="range"]</header>
+				<div class="content">
+					<div class="result">
+						<input type="range" min="0" max="100" value="40" step="5" class="example example-input-range" list="tickmarks"/>
+					</div>
+					<pre>&lt;input type="range" list="tickmarks" />
+
+&lt;datalist id="tickmarks">
+	&lt;option value="0" label="0%">
+	&lt;option value="10">
+	&lt;option value="20">
+	&lt;option value="30">
+	&lt;option value="40">
+	&lt;option value="50" label="50%">
+	&lt;option value="60">
+	&lt;option value="70">
+	&lt;option value="80">
+	&lt;option value="90">
+	&lt;option value="100" label="100%">
+&lt;/datalist></pre>
+				</div>
+			</section>
+			<section id="input-range-styled" class="l-section-example">
+				<header>input[type="range"]</header>
+				<div class="content">
+					<div class="result">
+						<input type="range" min="0" max="100" value="40" step="5" class="example example-input-range-styled"/>
+					</div>
+					<label for="section-input-range-webkit">+ webkit</label>
+					<pre>::-webkit-slider-container
+::-webkit-slider-runnable-track
+::-webkit-slider-thumb
+::-webkit-media-slider-container
+::-webkit-media-slider-thumb
+::-webkit-color-swatch-wrapper
+::-webkit-color-swatch
+
+::-moz-range-track
+[orient=vertical]::-moz-range-track
+::-moz-range-progress
+::-moz-range-thumb
+::-moz-focus-outer
+
+::-ms-fill-lower
+::-ms-fill-upper
+::-ms-ticks-before
+::-ms-ticks-after
+::-ms-thumb
+::-ms-track
+::ms-tooltip</pre>
+				</div>
+			</section>
+			<section id="input-color" class="l-section-example">
+				<header>input[type="color"]</header>
+				<div class="content">
+					<div class="result">
+						<input type="color" class="example example-input-color"/>
+					</div>
+					<pre>&lt;input type="color" /></pre>
+				</div>
+			</section>
+			<section id="input-color-styled" class="l-section-example">
+				<header>input[type="color"]</header>
+				<div class="content">
+					<div class="result">
+						<input type="color" class="example example-input-color-styled"/>
+					</div>
+					<pre>::-webkit-color-swatch
+::-webkit-color-swatch-wrapper
+
+::-moz-color-swatch
+::-moz-focus-inner</pre>
+				</div>
+			</section>
+			<section id="textarea" class="l-section-example">
+				<header>textarea</header>
+				<div class="content">
+					<div class="result">
+						<textarea></textarea>
+					</div>
+				</div>
+			</section>
+		</section>
+		<section id="html5-list">
+			<details class="menu" open>
+				<summary>HTML 5</summary>
+				<ul>
+					<li>
+						<label for="section-summary">summary</label>
+						<label for="section-summary-styled">+ styled</label>
+					</li>
+					<li><label for="section-dialog">dialog</label></li>
+					<!--<li>
+						<label for="section-meter">meter</label>
+						<label for="section-meter-styled">+ styled</label>
+					</li>-->
+					<li>
+						<label for="section-progress-indeterminate">progress</label>
+						<label for="section-progress-styled">+ styled</label>
+					</li>
+					<!--<li>
+						<label for="section-audio">audio</label>
+						<label for="section-audio-styled">+ styled</label>
+					</li>-->
+					<li>
+						<label for="section-video">video</label>
+						<label for="section-video-styled">+ styled</label>
+					</li>
+				</ul>
+				<label for="section-input-list">Form Inputs</label>
+			</details>
+			<section id="summary" class="l-section-example">
+				<header>summary & details</header>
+				<div class="content">
+					<div class="result">
+						<details>
+							<summary>Toggle</summary>
+							<div>lorem</div>
+							<div>ipsum</div>
+							<div>dolor</div>
+							<div>sit</div>
+							<div>amet</div>
+						</details>
+					</div>
+					<pre>&lt;details>
+	&lt;summary>&lt;/summary>
+	...
+&lt;/details></pre>
+				</div>
+			</section>
+			<section id="summary-styled" class="l-section-example">
+				<header>summary & details</header>
+				<div class="content">
+					<div class="result">
+						<details class="example example-summary-styled">
+							<summary>Toggle</summary>
+							<div>lorem</div>
+							<div>ipsum</div>
+							<div>dolor</div>
+							<div>sit</div>
+							<div>amet</div>
+						</details>
+					</div>
+					<pre>::-webkit-details-marker {
+	color: red;
+	}</pre>
+				</div>
+			</section>
+			<section id="dialog" class="l-section-example">
+				<header>dialog</header>
+				<div class="content">
+					<div class="result">
+						<span id="example-dialog-opener" class="example-dialog-opener">Open dialog</span>
+						<dialog id="example-dialog" class="example example-dialog">
+							<header class="example-dialog__header">::backdrop</header>
+							<div>
+								<p>
+									<label><span class="example__label">::backdrop color</span><input type="color" id="example-dialog-color"/></label>
+								</p>
+								<p>
+									<label><span class="example__label">::backdrop opacity</span><input type="range" min="0" max="1" step="0.01" value="0.2" id="example-dialog-range"/></label>
+								</p>
+								<span id="example-dialog-closer" class="example-dialog-closer">Close</span>
+							</div>
+						</dialog>
+					</div>
+					<pre>&lt;span onclick="dialog.<b>showModal();</b>">Open dialog&lt;/span>
+&lt;dialog>
+	...
+	&lt;span onclick="dialog.<b>close();</b>">&lt;/span>
+&lt;/dialog></pre>
+				</div>
+			</section>
+			<section id="meter" class="l-section-example">
+				<header>meter</header>
+				<div class="content">
+					<div class="result">
+						<meter value="75" low="20" optimum="50" high="80" max="100" class="example example-meter">Low</meter>
+						<meter value="40" low="20" optimum="10" high="60" max="100" class="example example-meter">Low</meter>
+						<meter value="20" low="50" optimum="80" high="60" max="100" class="example example-meter">Low</meter>
+					</div>
+					<pre>&lt;meter value="60" low="40" high="80" min="0" max="100">&lt;/meter></pre>
+				</div>
+			</section>
+			<section id="meter-styled" class="l-section-example">
+				<header>meter</header>
+				<div class="content">
+					<div class="result">
+						<meter value="75" low="20" optimum="50" high="80" max="100" class="example example-meter-styled" id="example-meter-styled">Low</meter>
+					</div>
+					<div class="example-meter__range-container clearfix">
+						<div class="example-meter__range">
+							<span>Value</span><input type="range" id="example-meter-styled_value" min="0" value="75" max="100"><em>75</em>
+						</div>
+						<div class="example-meter__range">
+							<span>Low</span><input type="range" id="example-meter-styled_low" min="0" max="100" value="20"><em>20</em>
+						</div>
+						<div class="example-meter__range">
+							<span>Optimum</span><input type="range" id="example-meter-styled_high" min="0" max="100" value="50"><em>50</em>
+						</div>
+						<div class="example-meter__range">
+							<span>High</span><input type="range" id="example-meter-styled_optimum" min="0" max="100" value="80"><em>80</em>
+						</div>
+					</div>
+					<label for="section-meter-styled-webkit">+ webkit</label>
+				</div>
+			</section>
+			<section id="meter-styled-webkit" class="l-section-example">
+				<header>meter</header>
+				<div class="content">
+					<div class="result">
+						<meter value="75" low="20" optimum="50" high="80" max="100" class="example example-meter-styled" id="example-meter-styled-webkit">Low</meter>
+					</div>
+					<div class="example-meter__range-container clearfix">
+						<div class="example-meter__range">
+							<span>Value</span><input type="range" id="example-meter-styled-webkit_value" min="0" value="75" max="100"><em>75</em>
+						</div>
+						<div class="example-meter__range">
+							<span>Low</span><input type="range" id="example-meter-styled-webkit_low" min="0" max="100" value="20"><em>20</em>
+						</div>
+						<div class="example-meter__range">
+							<span>Optimum</span><input type="range" id="example-meter-styled-webkit_high" min="0" max="100" value="50"><em>50</em>
+						</div>
+						<div class="example-meter__range">
+							<span>High</span><input type="range" id="example-meter-styled-webkit_optimum" min="0" max="100" value="80"><em>80</em>
+						</div>
+					</div>
+					<div class="example-meter__color-container">
+						<h4>Colors</h4>
+						<div class="example-meter__color">
+							<span>::-webkit-meter-optimum-value</span><input type="color" id="example-meter-styled_optimum-color" value="#aadd77"><em>low < value < high</em>
+						</div>
+						<div class="example-meter__color">
+							<span>::-webkit-meter-suboptimum-value</span><input type="color" id="example-meter-styled_high-color" value="#ffee77"><em>value < low || value > high</em>
+						</div>
+						<div class="example-meter__color">
+							<span>::-webkit-meter-even-less-good-value</span><input type="color" id="example-meter-styled_low-color" value="#ff7777"><em>value < low < high < optimum
+							<br/> || value > high > low > optimum</em></div>
+					</div>
+				</div>
+			</section>
+			<section id="progress-indeterminate" class="l-section-example">
+				<header>progress</header>
+				<div class="content">
+					<div class="result">
+						<progress max="100" class="example example-progress"></progress>
+					</div>
+					<pre>&lt;progress max="100">&lt;/progress></pre>
+					<label for="section-progress" class="example-content-label">Stop!</label>
+				</div>
+			</section>
+			<section id="progress" class="l-section-example">
+				<header>progress</header>
+				<div class="content">
+					<div class="result">
+						<progress value="80" max="100" class="example example-progress"></progress>
+					</div>
+					<pre>&lt;progress value="80" max="100">&lt;/progress></pre>
+				</div>
+			</section>
+			<section id="progress-styled" class="l-section-example">
+				<header>progress</header>
+				<div class="content">
+					<div class="result">
+						<progress value="80" max="100" class="example example-progress-styled" id="example-progress-styled"></progress>
+					</div>
+					<label for="section-progress-styled-webkit">+ webkit</label>
+					<label for="section-progress-styled-firefox">+ firefox</label>
+					<label for="section-progress-styled-edge">+ edge</label>
+				</div>
+			</section>
+			<section id="progress-styled-webkit" class="l-section-example">
+				<header>progress</header>
+				<div class="content">
+					<div class="result">
+						<progress value="80" max="100" class="example example-progress-styled" id="example-progress-styled-webkit"></progress>
+					</div>
+					<div class="example-progress__option-container">
+						<div class="example-progress__option">
+							<span>::-webkit-progress-inner-element</span><input type="range" min="0" max="10" value="0" step="1" id="example-progress-webkit-inner-element">
+						</div>
+						<div class="example-progress__option">
+							<span>::-webkit-progress-bar</span><input type="color" id="example-progress-webkit-progress-bar" value="#808080">
+						</div>
+						<div class="example-progress__option">
+							<span>::-webkit-progress-value</span><input type="color" id="example-progress-webkit-progress-value" value="#008000">
+						</div>
+					</div>
+					<label for="section-progress-styled-firefox">+ firefox</label>
+					<label for="section-progress-styled-edge">+ edge</label>
+				</div>
+			</section>
+			<section id="progress-styled-firefox" class="l-section-example">
+				<header>progress</header>
+				<div class="content">
+					<div class="result">
+						<progress value="80" max="100" class="example example-progress-styled-firefox"></progress>
+					</div>
+					<pre>&lt;progress value="80" max="100">&lt;/progress></pre>
+					<label for="section-progress-styled-webkit">+ webkit</label>
+					<label for="section-progress-styled-edge">+ edge</label>
+				</div>
+			</section>
+			<section id="progress-styled-edge" class="l-section-example">
+				<header>progress</header>
+				<div class="content">
+					<div class="result">
+						<progress value="80" max="100" class="example example-progress-styled-edge"></progress>
+					</div>
+					<pre>&lt;progress value="80" max="100">&lt;/progress></pre>
+					<label for="section-progress-styled-webkit">+ webkit</label>
+					<label for="section-progress-styled-firefox">+ firefox</label>
+				</div>
+			</section>
+			<section id="audio" class="l-section-example">
+				<header>audio</header>
+				<div class="content">
+					<div class="result">
+						<audio controls src="assets/media/starman.mp3"></audio>
+					</div>
+					<pre>&lt;audio controls src="starman.mp3">&lt;/audio></pre>
+				</div>
+			</section>
+			<section id="video" class="l-section-example">
+				<header>video</header>
+				<div class="content">
+					<div class="result">
+						<video controls poster="assets/images/poster.jpg" class="example-video">
+							<source src="http://iandevlin.github.io/mdn/video-player/video/tears-of-steel-battle-clip-medium.mp4" type="video/mp4">
+							<source src="http://iandevlin.github.io/mdn/video-player/video/tears-of-steel-battle-clip-medium.webm" type="video/webm">
+							<source src="http://iandevlin.github.io/mdn/video-player/video/tears-of-steel-battle-clip-medium.ogg" type="video/ogg">
+						</video>
+					</div>
+					<pre>&lt;video controls poster="poster.jpg">
+	&lt;source type="video/mp4" src="video.mp4">
+	&lt;source type="video/webm" src="video.webm">
+	&lt;source type="video/ogg" src="video.ogg">
+&lt;/video></pre>
+				</div>
+			</section>
+			<section id="video-styled" class="l-section-example">
+				<header>video</header>
+				<div class="content">
+					<div class="result">
+						<video controls poster="assets/images/poster.jpg" class="example-video-styled">
+							<source src="http://iandevlin.github.io/mdn/video-player/video/tears-of-steel-battle-clip-medium.mp4" type="video/mp4">
+							<source src="http://iandevlin.github.io/mdn/video-player/video/tears-of-steel-battle-clip-medium.webm" type="video/webm">
+							<source src="http://iandevlin.github.io/mdn/video-player/video/tears-of-steel-battle-clip-medium.ogg" type="video/ogg">
+						</video>
+					</div>
+					<pre>::-webkit-media-controls-panel
+::-webkit-media-controls-play-button
+::-webkit-media-controls-volume-slider-container
+::-webkit-media-controls-volume-slider
+::-webkit-media-controls-mute-button
+::-webkit-media-controls-timeline
+::-webkit-media-controls-current-time-display
+::-webkit-full-page-media::-webkit-media-controls-panel
+::-webkit-media-controls-timeline-container
+::-webkit-media-controls-time-remaining-display
+::-webkit-media-controls-seek-back-button
+::-webkit-media-controls-seek-forward-button
+::-webkit-media-controls-fullscreen-button
+::-webkit-media-controls-overlay-play-button
+::-webkit-media-controls-rewind-button
+::-webkit-media-controls-return-to-realtime-button
+::-webkit-media-controls-toggle-closed-captions-button</pre>
+				</div>
+			</section>
+			<section id="video-styled-omg" class="l-section-example">
+				<header>video</header>
+				<div class="content">
+					<div class="result example-video-styled-omg">
+						<figure id="videoContainer" data-fullscreen="false">
+							<video id="videoP" controls preload="metadata" poster="assets/images/poster.jpg">
+								<source src="http://iandevlin.github.io/mdn/video-player/video/tears-of-steel-battle-clip-medium.mp4" type="video/mp4">
+								<source src="http://iandevlin.github.io/mdn/video-player/video/tears-of-steel-battle-clip-medium.webm" type="video/webm">
+								<source src="http://iandevlin.github.io/mdn/video-player/video/tears-of-steel-battle-clip-medium.ogg" type="video/ogg">
+							</video>
+							<div id="video-controls" class="controls" data-state="hidden">
+								<button id="playpause" type="button" data-state="play">Play/Pause</button>
+								<button id="stop" type="button" data-state="stop">Stop</button>
+								<div class="progress">
+									<progress id="progressP" value="0" min="0">
+										<span id="progress-bar"></span>
+									</progress>
+								</div>
+								<button id="mute" type="button" data-state="mute">Mute/Unmute</button>
+								<button id="volinc" type="button" data-state="volup">Vol+</button>
+								<button id="voldec" type="button" data-state="voldown">Vol-</button>
+								<button id="fs" type="button" data-state="go-fullscreen">Fullscreen</button>
+							</div>
+							<figcaption>
+								&copy; Blender Foundation | <a href="http://mango.blender.org">mango.blender.org</a>
+							</figcaption>
+						</figure>
+					</div>
+					<pre>&lt;div id="video-controls" class="controls">
+	&lt;button id="playpause" type="button">Play/Pause&lt;/button>
+	&lt;button id="stop" type="button">Stop&lt;/button>
+	&lt;div class="progress">
+		&lt;progress id="progress" value="0" min="0">
+			&lt;span id="progress-bar">&lt;/span>
+		&lt;/progress>
+	&lt;/div>
+	&lt;button id="mute" type="button">Mute/Unmute&lt;/button>
+	&lt;button id="volinc" type="button">Vol+&lt;/button>
+	&lt;button id="voldec" type="button">Vol-&lt;/button>
+	&lt;button id="fs" type="button">Fullscreen&lt;/button>
+&lt;/div></pre>
+				</div>
+			</section>
+		</section>
+		<section id="page-outro" class="l-section-page">
+			<label for="section-page-final" class="page-navigation-label"></label>
+		</section>
+		<section id="page-final" class="l-section-page">
+			<div class="l-section-page__inner">
+				<div class="final-page__content">
+					<h2>Thanks</h2>
+					<div>
+						<a href="mailto:is4kov@gmail.com" target="_blank">e-mail</a>
+					</div>
+					<div>
+						<a href="https://facebook.com/is4kov" target="_blank">facebook</a>
+					</div>
+					<label for="section-page-start">To start</label>
+				</div>
+			</div>
+		</section>
+	</section>
+	<!-- for copypaste -->
+	<!-- section#some-id>header+.content>.result+.support -->
+	<datalist id="tickmarks">
+		<option value="0" label="0%">
+		<option value="10">
+		<option value="20">
+		<option value="30">
+		<option value="40">
+		<option value="50" label="50%">
+		<option value="60">
+		<option value="70">
+		<option value="80">
+		<option value="90">
+		<option value="100" label="100%">
+	</datalist>
+</div>
+<script src="js/main.js"></script>
+<script src="js/video-player.js"></script>
+</body>
+</html>
