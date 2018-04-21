@@ -1548,6 +1548,9 @@ label[for*="styled"] {
 #section-page-intro:checked ~ * section#page-intro {
   display: block; }
 
+#section-page-content-end:checked ~ * section#page-content-end {
+  display: block; }
+
 #section-page-outro:checked ~ * section#page-outro {
   display: block; }
 
@@ -1586,9 +1589,11 @@ label[for*="styled"] {
     margin: auto 0;
     width: 100%; }
 
-#page-intro {
+#page-intro,
+#page-content-end {
   position: relative; }
-  #page-intro progress {
+  #page-intro progress,
+  #page-content-end progress {
     position: absolute;
     left: 50%;
     top: 50%;
