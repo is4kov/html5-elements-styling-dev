@@ -1,0 +1,15 @@
+.global-navigation {
+
+  &__element {
+
+    &:not(:first-child) {
+      margin-top: 1em;
+    }
+  }
+
+  &__link {
+    border-bottom: 1px dashed $color-blue;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+}

@@ -127,7 +127,6 @@ function meter() {
     function updateColors() {
 
         var type = this.id.substr(this.id.indexOf('_') + 1);
-        console.log(this, type)
         var selector = '';
         var style = document.createElement('style');
 
@@ -144,10 +143,10 @@ function meter() {
     }
 }
 
-meter();
+// meter();
 
 function progress() {
-    var progress_webkit_selector = 'example-progress-styled-webkit';
+    var progress_webkit_selector = 'example-progress-styled';
     var inner_webkit = document.getElementById('example-progress-webkit-inner-element');
     var bar_webkit = document.getElementById('example-progress-webkit-progress-bar');
     var value_webkit = document.getElementById('example-progress-webkit-progress-value');
@@ -157,23 +156,18 @@ function progress() {
     value_webkit.addEventListener('change', updateProgressValueWebkit, false);
 
     function updateInnerElementWebkit() {
-        console.log(this.value)
         var style = document.createElement('style');
         style.innerHTML = '#' + progress_webkit_selector + '::-webkit-progress-inner-element { display:block;border: ' + this.value + 'px solid #666; }';
         document.body.appendChild(style);
     }
 
     function updateProgressBarWebkit() {
-        console.log(this.value)
-
         var style = document.createElement('style');
         style.innerHTML = '#' + progress_webkit_selector + '::-webkit-progress-bar {background: ' + this.value + '; }';
         document.body.appendChild(style);
     }
 
     function updateProgressValueWebkit() {
-        console.log(this.value)
-
         var style = document.createElement('style');
         style.innerHTML = '#' + progress_webkit_selector + '::-webkit-progress-value {background: ' + this.value + '; }';
         document.body.appendChild(style);

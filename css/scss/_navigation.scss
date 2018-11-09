@@ -1,0 +1,41 @@
+.navigation {
+
+  &__label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 1.5em;
+    z-index: 1;
+    padding: .5em;
+    border-bottom: 1px dashed $color-blue;
+    opacity: .5;
+    background: $color-white;
+    font-size: .5em;
+    color: $color-blue;
+    text-decoration: none;
+
+    &.is-prev {
+      left: 1.5em;
+
+      &::before {
+        content: '<';
+        margin-right: 4px;
+      }
+    }
+
+    &.is-next {
+      right: 1.5em;
+
+      &::after {
+        content: '>';
+        margin-left: 4px;
+      }
+    }
+  }
+}
