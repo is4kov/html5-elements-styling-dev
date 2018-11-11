@@ -1,4 +1,19 @@
 .navigation {
+  text-align: center;
+
+  &__direction {
+    position: absolute;
+    bottom: 1em;
+    z-index: 1;
+
+    &.is-prev {
+      left: 1em;
+    }
+
+    &.is-next {
+      right: 1em;
+    }
+  }
 
   &__label {
     position: absolute;
@@ -9,9 +24,7 @@
   }
 
   &__link {
-    position: absolute;
-    bottom: 1.5em;
-    z-index: 1;
+    display: block;
     padding: .5em;
     border-bottom: 1px dashed $color-blue;
     opacity: .5;
@@ -20,22 +33,34 @@
     color: $color-blue;
     text-decoration: none;
 
-    &.is-prev {
-      left: 1.5em;
+    &:not(:first-child) {
+      margin-top: 1em;
+    }
+
+    .is-prev & {
 
       &::before {
         content: '<';
-        margin-right: 4px;
+        margin-right: .25em;
       }
     }
 
-    &.is-next {
-      right: 1.5em;
+    .is-next & {
 
       &::after {
         content: '>';
-        margin-left: 4px;
+        margin-left: .25em;
       }
+    }
+  }
+
+  &__vendor {
+    display: inline-block;
+    font-size: .5em;
+    text-decoration: none;
+
+    &:not(:first-child) {
+      margin-left: 3em;
     }
   }
 }

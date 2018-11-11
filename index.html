@@ -19,6 +19,12 @@
 		<a href="#input-list" class="navigation__label"></a>
 	</section>
 
+	<!--<section id="appearance" class="slide">
+		<div class="slide__content">
+
+		</div>
+	</section>-->
+
 	<section id="input-list" class="slide">
 
 		<section id="input-text" class="slide is-detailed">
@@ -68,6 +74,27 @@
 				<pre>::-ms-reveal {
 	color: white;
 	}</pre>
+			</div>
+		</section>
+
+		<section id="input-file" class="slide is-detailed">
+			<header>input[type="file"]</header>
+			<div class="content">
+				<div class="result">
+					<input type="file" />
+				</div>
+			</div>
+		</section>
+
+		<section id="input-file-styled" class="slide is-detailed">
+			<header>input[type="file"]</header>
+			<div class="content">
+				<div class="result">
+					<input type="file" id="" class="example example-input-file-styled" />
+				</div>
+				<pre>::-webkit-file-upload-button
+
+::-ms-browse</pre>
 			</div>
 		</section>
 
@@ -259,7 +286,6 @@
 			</div>
 		</section>
 
-
 		<div class="sidebar" data-for="input">
 			<details class="sidebar-menu" open>
 				<summary class="sidebar-menu__summary">Inputs</summary>
@@ -271,6 +297,10 @@
 					<li>
 						<a href="#input-password" class="sidebar-menu__link">password</a>
 						<a href="#input-password-styled" class="sidebar-menu__link is-styled">+ styled</a>
+					</li>
+					<li>
+						<a href="#input-file" class="sidebar-menu__link">file</a>
+						<a href="#input-file-styled" class="sidebar-menu__link is-styled">+ styled</a>
 					</li>
 					<li>
 						<a href="#input-button" class="sidebar-menu__link">button</a>
@@ -296,7 +326,7 @@
 					</li>
 				</ul>
 			</details>
-			<div class="sidebar__navigation globla-navigation">
+			<div class="sidebar__navigation global-navigation">
 				<div class="global-navigation__element">
 					<a href="#html5-list" class="global-navigation__link">HTML5 Tags</a>
 				</div>
@@ -344,6 +374,7 @@
 				</div>
 				<pre>::-webkit-details-marker {
 	color: red;
+	transform: rotate(360deg);
 	}</pre>
 			</div>
 		</section>
@@ -373,6 +404,7 @@
 &lt;/dialog></pre>
 			</div>
 		</section>
+
 		<section id="meter" class="slide is-detailed">
 			<header>meter</header>
 			<div class="content">
@@ -384,6 +416,7 @@
 				<pre>&lt;meter value="60" low="40" high="80" min="0" max="100">&lt;/meter></pre>
 			</div>
 		</section>
+
 		<section id="meter-styled" class="slide is-detailed">
 			<header>meter</header>
 			<div class="content">
@@ -467,7 +500,28 @@
 			<header>progress</header>
 			<div class="content">
 				<div class="result">
-					<progress value="80" max="100" class="example example-progress-styled" id="example-progress-styled"></progress>
+					<progress value="80" max="100" class="example example-progress-styled"></progress>
+				</div>
+			</div>
+			<pre>::-webkit-progress-bar
+::-webkit-progress-value
+::-webkit-progress-inner-element
+
+::-moz-progress-bar
+
+::-ms-fill</pre>
+			<div class="navigation">
+				<a href="#progress-styled-webkit" class="navigation__vendor">+ webkit</a>
+				<a href="#progress-styled-firefox" class="navigation__vendor">+ firefox</a>
+				<a href="#progress-styled-edge" class="navigation__vendor">+ edge</a>
+			</div>
+		</section>
+
+		<section id="progress-styled-webkit" class="slide is-detailed">
+			<header>progress</header>
+			<div class="content">
+				<div class="result">
+					<progress value="80" max="100" class="example example-progress-styled" id="example-progress-styled-webkit"></progress>
 				</div>
 				<div class="example-progress__option-container">
 					<div class="example-progress__option">
@@ -479,6 +533,54 @@
 					<div class="example-progress__option">
 						<span>::-webkit-progress-value</span><input type="color" id="example-progress-webkit-progress-value" value="#008000">
 					</div>
+				</div>
+				<div class="navigation">
+					<a href="#progress-styled-firefox" class="navigation__vendor">+ firefox</a>
+					<a href="#progress-styled-edge" class="navigation__vendor">+ edge</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="progress-styled-firefox" class="slide is-detailed">
+			<header>progress</header>
+			<div class="content">
+				<div class="result">
+					<progress value="80" max="100" class="example example-progress-styled" id="example-progress-styled-firefox"></progress>
+				</div>
+			</div>
+			<div class="navigation">
+				<a href="#progress-styled-webkit" class="navigation__vendor">+ webkit</a>
+				<a href="#progress-styled-edge" class="navigation__vendor">+ edge</a>
+			</div>
+		</section>
+
+		<section id="progress-styled-edge" class="slide is-detailed">
+			<header>progress</header>
+			<div class="content">
+				<div class="example example-progress-styled-edge">
+					<input type="radio" id="progress-edge-ms-bar" name="progress-edge-animation-name" class="example-progress-styled-edge__input" checked />
+					<input type="radio" id="progress-edge-ms-ring" name="progress-edge-animation-name" class="example-progress-styled-edge__input" />
+
+					<div class="example-progress-styled-edge__header">::-ms-fill</div>
+					<div class="example-progress-styled-edge__toggler">
+						<label for="progress-edge-ms-bar">
+<pre>::-ms-fill {
+	animation-name: -ms-bar;
+	}</pre>
+						</label>
+						<label for="progress-edge-ms-ring">
+<pre>
+::-ms-fill {
+	animation-name: -ms-ring;
+	}</pre>
+						</label>
+					</div>
+
+					<progress class="example-progress-styled-edge__progress" max="100"></progress>
+				</div>
+				<div class="navigation">
+					<a href="#progress-styled-webkit" class="navigation__vendor">+ webkit</a>
+					<a href="#progress-styled-firefox" class="navigation__vendor">+ firefox</a>
 				</div>
 			</div>
 		</section>
@@ -628,12 +730,25 @@
 	<section id="page-content-end" class="slide">
 		<progress></progress>
 		<a href="#page-outro" class="navigation__label"></a>
-		<a href="#html5-list" class="navigation__link is-prev">Back to HTML5</a>
+
+		<div class="navigation">
+			<div class="navigation__direction is-prev">
+				<a href="#input-list" class="navigation__link">Back to Inputs</a>
+				<a href="#html5-list" class="navigation__link">Back to HTML5</a>
+			</div>
+		</div>
 	</section>
 
 	<section id="page-outro" class="slide">
-		<a href="#page-final" class="navigation__label"></a>
-		<a href="#html5-list" class="navigation__link is-prev">Back to HTML5</a>
+
+		<div class="navigation">
+			<a href="#page-final" class="navigation__label"></a>
+
+			<div class="navigation__direction is-prev">
+				<a href="#input-list" class="navigation__link">Back to Inputs</a>
+				<a href="#html5-list" class="navigation__link">Back to HTML5</a>
+			</div>
+		</div>
 	</section>
 
 	<section id="page-final" class="slide">
@@ -646,8 +761,15 @@
 				<div>
 					<a href="https://facebook.com/is4kov" target="_blank">facebook</a>
 				</div>
-				<a href="#page-start" class="navigation__link is-prev">Back to HTML5</a>
-				<a href="#page-start" class="navigation__link is-next">To start</a>
+				<div class="navigation">
+					<div class="navigation__direction is-prev">
+						<a href="#html5-list" class="navigation__link">Back to Inputs</a>
+						<a href="#input-list" class="navigation__link">Back to HTML5</a>
+					</div>
+					<div class="navigation__direction is-next">
+						<a href="#page-start" class="navigation__link">To start</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>

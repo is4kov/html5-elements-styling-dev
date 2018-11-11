@@ -146,7 +146,7 @@ function meter() {
 // meter();
 
 function progress() {
-    var progress_webkit_selector = 'example-progress-styled';
+    var progress_webkit_selector = 'example-progress-styled-webkit';
     var inner_webkit = document.getElementById('example-progress-webkit-inner-element');
     var bar_webkit = document.getElementById('example-progress-webkit-progress-bar');
     var value_webkit = document.getElementById('example-progress-webkit-progress-value');
@@ -157,7 +157,7 @@ function progress() {
 
     function updateInnerElementWebkit() {
         var style = document.createElement('style');
-        style.innerHTML = '#' + progress_webkit_selector + '::-webkit-progress-inner-element { display:block;border: ' + this.value + 'px solid #666; }';
+        style.innerHTML = '#' + progress_webkit_selector + '::-webkit-progress-inner-element { display:block;border: ' + this.value + 'px solid #222; }';
         document.body.appendChild(style);
     }
 

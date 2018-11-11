@@ -61,7 +61,7 @@ section {
 
 @each $tag in $html5-tags {
 
-  section##{$tag}:target {
+  /*section##{$tag}:target {
 
     label[for*='webkit'],
     label[for*='firefox'],
@@ -69,7 +69,7 @@ section {
       margin-top: 1.5em;
       display: block;
     }
-  }
+  }*/
 
   section##{$tag}:target,
   section##{$tag}-styled:target {

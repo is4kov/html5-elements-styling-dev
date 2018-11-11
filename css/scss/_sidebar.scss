@@ -16,7 +16,14 @@
   overflow-x: hidden;
   border: 1px solid rgba($color-black, .2);
   box-shadow: 0 4px 8px rgba($color-black, .05);
-  background: $color-white;
+  background-color: $color-white;
+
+  // Browser-hack related CSS
+
+  background-position: calc(100% + 1em) calc(100% + 1em);
+  background-repeat: no-repeat;
+  background-size: 196px auto;
+
 
   &::-webkit-scrollbar {
     width: 6px;
@@ -104,9 +111,7 @@
 
   _::-moz-progress-bar, body:last-child & {
     background-image: url('#{$path-images}firefox-icon.svg');
-    background-position: calc(100% + 1em) calc(100% + 1em);
-    background-repeat: no-repeat;
-    background-size: 196px auto;
+
   }
 
   // Edge
@@ -117,9 +122,6 @@
 
       & {
         background-image: url('#{$path-images}edge-icon.svg');
-        background-position: calc(100% + 1em) calc(100% + 1em);
-        background-repeat: no-repeat;
-        background-size: 196px auto;
       }
     }
   }
@@ -130,9 +132,6 @@
 
     & {
       background-image: url('#{$path-images}chrome-icon.svg');
-      background-position: calc(100% + 1em) calc(100% + 1em);
-      background-repeat: no-repeat;
-      background-size: 196px auto;
     }
   }
 }
